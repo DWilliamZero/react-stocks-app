@@ -8,11 +8,11 @@ Killer Quotes provides real-time (15-minute delay) stock quotes using the IEX ap
 
 ## **Wireframes:**
 ### **Home View**
-![](https://www.dwilliamzero.com/zero-cloud/my-stock-app_001.jpg)
+![](https://www.dwilliamzero.com/zero-cloud/my-stock-app_000.jpg)
 ### **Home View w/ Watchlist added**
-![](https://www.dwilliamzero.com/zero-cloud/my-stock-app_002.jpg)
+![](https://www.dwilliamzero.com/zero-cloud/my-stock-app_001.jpg)
 ### **Detailed Quote View**
-![](https://www.dwilliamzero.com/zero-cloud/my-stock-app_003.jpg)
+![](https://www.dwilliamzero.com/zero-cloud/my-stock-app_002.jpg)
 
 ## **Component Tree:**
 ![](https://www.dwilliamzero.com/zero-cloud/my-stock-app-component-tree_004.jpg)
