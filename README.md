@@ -15,7 +15,7 @@ Killer Quotes provides real-time (15-minute delay) stock quotes using the IEX ap
 ![](https://www.dwilliamzero.com/zero-cloud/my-stock-app_002.jpg)
 
 ## **Component Tree:**
-![](https://www.dwilliamzero.com/zero-cloud/my-stock-app-component-tree_004.jpg)
+![](https://www.dwilliamzero.com/zero-cloud/my-stock-app-component-tree.jpg)
 
 ## **API:** 
 The app will be using the [IEX API](https://iexcloud.io/)
