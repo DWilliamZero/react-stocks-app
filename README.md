@@ -1,5 +1,6 @@
 # Killer Kwotes
-Is a responsive web app that allows the user to seach stock quotes, charts, and finacial data.
+### A responsive web app that allows the user to seach stock quotes, charts, and finacial data.
+
 ![](https://media.giphy.com/media/Wn74RUT0vjnoU98Hnt/giphy.gif)
 
 ## **Description:**
