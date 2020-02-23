@@ -1,5 +1,5 @@
 # Killer Kwotes
-Is A responsive web app that allows the user to seach stock quotes, charts, and finacial data.
+Is a responsive web app that allows the user to seach stock quotes, charts, and finacial data.
 
 ## **Description:**
 Killer Kwotes provides real-time (15-minute delay) stock quotes using the IEX api. Users can add stocks to their watchlist, see price data, chart data, and in-depth company information.
