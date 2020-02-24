@@ -4,7 +4,7 @@
 ![](https://media.giphy.com/media/Wn74RUT0vjnoU98Hnt/giphy.gif)
 
 ## **Description:**
-Killer Quotes provides real-time (15-minute delay) stock quotes using the IEX api. Users can add stocks to their watchlist, see price data, chart data, and in-depth company information.  App is responsive for mobile and tablet screen sizes/
+Killer Quotes provides real-time (15-minute delay) stock quotes using the IEX API. Users can add stocks to their watchlist, see price data, chart data, and in-depth company information.  App is responsive for mobile and tablet screen sizes.  Charts will be render using the amCharts4 library.
 
 ## **Wireframes:**
 ### **Home View**

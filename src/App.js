@@ -9,7 +9,7 @@ function App() {
       const stocks = await Axios.get(
         `https://cloud.iexapis.com/stable/stock/aapl/chart/1y?token=sk_2829eadc8b754e7b8bd84fc647934978`
       )
-      console.log(stocks)
+      console.log([stocks])
     } catch (error) {
       console.error(error)
     }
@@ -20,7 +20,7 @@ function App() {
       const stocks = await Axios.get(
         `https://cloud.iexapis.com/stable/stock/aapl/quote?token=sk_2829eadc8b754e7b8bd84fc647934978`
       )
-      console.log(stocks)
+      console.log([stocks])
     } catch (error) {
       console.error(error)
     }
