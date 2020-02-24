@@ -29,3 +29,4 @@ The app will be using the [IEX API](https://iexcloud.io/)
 ## **Post-MVP:**
 1. Incorporate Google Maps into Detailed Quotes for Company Headquarters
 2. Detailed Quote Info Can Be Shared By Email
+3. Incorporate modals where appropriate.
