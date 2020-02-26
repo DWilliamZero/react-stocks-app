@@ -71,14 +71,8 @@ class Chart extends React.Component {
   render() {
     return (
       <div>
-        <h1>Chart For {this.state.name}</h1>
-        <div id="chartdiv"
-          style={{
-            color: 'white',
-            width: "600px",
-            height: "500px",
-            border: "3px solid white"
-          }}></div>
+        <h1>{this.state.name}'s 52-Week Chart</h1>
+        <div className='chart' id="chartdiv"></div>
       </div>
 
     );

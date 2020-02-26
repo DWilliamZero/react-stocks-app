@@ -3,11 +3,10 @@ import React from 'react';
 const FindStock = (props) => {
   return (
     <>
-      <h2>Watchlist #1</h2>
-      <form onSubmit={e => props.onSubmit(e)}>
+      <form name={props.list} id={props.name} className='form' onSubmit={props.onSubmit}>
         <input
           value={props.value}
-          onChange={e => props.onChange(e)}
+          onChange={props.onChange}
           name={props.name}
           type="text"
           placeholder='Enter Ticker Symbol'

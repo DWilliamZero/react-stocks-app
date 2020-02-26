@@ -7,8 +7,120 @@ body {
   text-align: center;
 }
 
+h4 {
+  margin: 0;
+}
+
+.watchlist-grid {
+  display: flex;
+}
+
+.add-watchlist {
+  font-size: 100px;
+  color: white;
+  text-shadow: 2px 3px 4px black;
+  margin: auto 20px;
+}
+
+.add-watchlist h1 {
+  margin: 0;
+}
+
+.add-watchlist:hover {
+  text-shadow: 4px 6px 8px black;
+  font-size: 100px;
+  cursor: default;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  font-size: 15px;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  margin: 0;
+  top: 100%;
+  left: 50%;
+  margin-left: -75px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+
+button {
+  font-size: 20px;
+  border: 2px solid black;
+  margin: 2px 5px;
+}
+
+input {
+  font-size: 20px;
+  border: 2px solid black;
+  margin: 2px 5px;
+}
+
+.watchlist {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid black;
+  padding: 30px;
+  box-shadow: 0 4px 6px 4px gray;
+  margin-top: 15px;
+}
+
+.watchlist h1 {
+  text-align: center;
+}
+
+.simple-quote {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.top-row {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 0;
+}
+
+.bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+}
+
 p {
   font-size: 20px;
+}
+
+.green {
+background-color: lightgreen;
+}
+
+.red{
+  background-color: pink;
 }
 
 nav {
@@ -61,6 +173,25 @@ nav {
   justify-content: space-between;
 }
 
+.quote {
+  height: 500px;
+  border: 1px solid black;
+  padding: 30px;
+  box-shadow: 0 4px 6px 4px gray;
+  margin-bottom: 10px;
+  width: 725px;
+  font-size: 20px;
+}
+
+.chart {
+  height: 500px;
+  border: 1px solid black;
+  padding: 30px;
+  box-shadow: 0 4px 6px 4px gray;
+  margin-bottom: 10px;
+  width: 725px;
+}
+
 .detailed-botton {
   display: flex;
   flex-direction: row;
@@ -95,9 +226,7 @@ img:hover {
 }
 
 .description {
-  border: 1px solid black;
-  padding: 30px;
-  box-shadow: 0 4px 6px 4px gray;
+
 }
 
 .primary {
