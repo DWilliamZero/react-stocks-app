@@ -1,3 +1,6 @@
+html {
+  width: 100%;
+}
 
 body {
   background: white;
@@ -14,6 +17,7 @@ h4 {
 
 .watchlist-grid {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .add-watchlist {
@@ -180,9 +184,11 @@ nav {
 }
 
 .quote-chart {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* display: flex; */
+  /* flex-direction: row;
+  justify-content: space-around; */
 }
 
 .quote {
@@ -191,7 +197,6 @@ nav {
   padding: 30px;
   box-shadow: 0 4px 6px 4px gray;
   margin-bottom: 10px;
-  width: 725px;
   font-size: 20px;
 }
 
@@ -201,7 +206,7 @@ nav {
   padding: 30px;
   box-shadow: 0 4px 6px 4px gray;
   margin-bottom: 10px;
-  width: 725px;
+  /* width: 725px; */
 }
 
 .detailed-botton {
@@ -230,7 +235,6 @@ margin: 0;
   box-shadow: 0 2px 3px 2px gray;
   border-radius: 100%;
   height: 200px;
-  width: 200px;
   object-fit: contain;
   padding: 5px;
   margin-top: 90px;
@@ -269,6 +273,7 @@ padding-bottom: 20px;
 .img-map {
   height: 400px;
   object-fit: contain;
+  width: auto;
 }
 
 footer {
@@ -280,4 +285,62 @@ footer {
   text-decoration: none;
   color: black;
   padding: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+
+.quote-chart {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart {
+  height: 300px;
+  width: auto;
+}
+
+.quote {
+  height: 300px;
+  width: auto;
+}
+
+.quote h1{
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.quote h3{
+  font-size: 20px;
+}
+
+.hero-data h2 {
+  font-size: 20px;
+}
+
+.primary {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+.img-logo {
+  margin: 10px;
+}
+
+.map-card {
+  margin: 10px auto;
+}
+
+
+
+
+
+}
+
+@media screen and (max-width: 650px) {
+
 }
