@@ -58,7 +58,7 @@ class Chart extends React.Component {
     scrollbarX.series.push(lineSeries);
     chart.scrollbarX = scrollbarX;
 
-    //chart.dataSource.url = `https://cloud.iexapis.com/stable/stock/${this.state.symbol}/chart/1y?token=${IEX_TOKEN}`;
+    chart.dataSource.url = `https://cloud.iexapis.com/stable/stock/${this.state.symbol}/chart/1y?token=${IEX_TOKEN}`;
     //console.log(chart);
   }
 

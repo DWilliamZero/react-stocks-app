@@ -15,7 +15,6 @@ const DetailedQuote = (props) => {
         <h3>Mrkt Cap:  <span>${(props.data.marketCap / 1000000000).toFixed(1)} Billion</span></h3>
       </div>
     </div>
-
   );
 }
 

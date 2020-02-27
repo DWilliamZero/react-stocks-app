@@ -171,12 +171,20 @@ class Container extends React.Component {
                 </div>
                 : ''}
             {
-              this.state.watchlists.length === 5 ?
+              this.state.watchlists.length === 5 || this.state.watchlists.length === 0 ?
                 '' :
                 <div className='add-watchlist tooltip' onClick={this.handleClick}>
                   <span className='tooltip-text'>Click To Create A Watchlist</span>
                   <h1>+</h1>
                 </div>
+            }
+            {
+              this.state.watchlists.length === 0 ?
+                <div className='add-watchlist-center tooltip' onClick={this.handleClick}>
+                  <span className='tooltip-text'>Click To Create A Watchlist</span>
+                  <h1>+</h1>
+                </div>
+                : ''
             }
           </div>
         </Route>
