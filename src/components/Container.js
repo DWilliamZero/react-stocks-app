@@ -6,12 +6,12 @@ import DetailedContainer from './DetailedContainer.js';
 import { Route } from 'react-router-dom';
 
 const IEX_TOKEN = process.env.REACT_APP_IEX_TOKEN;
+let n = 1;
 
 class Container extends React.Component {
   constructor() {
     super();
     this.state = {
-      search: '',
       searchQuery1: '',
       searchQuery2: '',
       searchQuery3: '',
@@ -43,7 +43,6 @@ class Container extends React.Component {
           `https://cloud.iexapis.com/stable/stock/${ticker}/quote?token=${IEX_TOKEN}`
         )
         stockData.push(stocks.data)
-        //console.log(stockData)
         this.setState({
           [`${listNum}Data`]: stockData
         })
@@ -54,8 +53,6 @@ class Container extends React.Component {
   }
 
   handleChange = event => {
-    console.log(event.target.name)
-    console.log(event.target.value)
     this.setState({
       [event.target.name]: event.target.value
     })
@@ -82,14 +79,58 @@ class Container extends React.Component {
   }
 
   handleClick = () => {
-    const newList = prompt("Please enter a watchlist name:", `New Watchlist ${this.state.watchlists.length + 1}`);
+    const newList = prompt("Please enter a watchlist name:", `New Watchlist ${n++}`);
     if (newList === "") {
       alert('You did not enter a name!');
-    } if (newList === null) {
+    } else if (newList === null) {
       return
     } else {
       this.setState({
         watchlists: [...this.state.watchlists, newList]
+      })
+    }
+  }
+
+  handleClose = (e) => {
+    const array = this.state.watchlists
+    if (e.target.id === 'tickers1') {
+      array.splice(0, 1);
+      this.setState({
+        watchlist: array,
+        tickers1: [],
+        tickers1Data: []
+      })
+    }
+    if (e.target.id === 'tickers2') {
+      array.splice(1, 1);
+      this.setState({
+        watchlist: array,
+        tickers2: [],
+        tickers2Data: []
+      })
+    }
+    if (e.target.id === 'tickers3') {
+      array.splice(2, 1);
+      this.setState({
+        watchlist: array,
+        tickers3: [],
+        tickers3Data: []
+      })
+    }
+    if (e.target.id === 'tickers4') {
+      array.splice(3, 1);
+      this.setState({
+        watchlist: array,
+        tickers4: [],
+        tickers4Data: []
+      })
+    }
+    if (e.target.id === 'tickers5') {
+      array.splice(4, 1);
+      this.setState({
+        watchlist: array,
+        tickers5: [],
+        tickers5Data: []
       })
     }
   }
@@ -101,8 +142,9 @@ class Container extends React.Component {
         <Route exact path='/'>
           <div className='watchlist-grid'>
             {
-              this.state.watchlists.length > 0 ?
+              this.state.watchlists[0] ?
                 <div className='watchlist'>
+                  <div className='close' onClick={this.handleClose} id='tickers1'>x</div>
                   <h1>{this.state.watchlists[0]}</h1>
                   <Watchlist name='watchlist-1' stocks={this.state.tickers1Data} />
                   <FindStock
@@ -117,6 +159,7 @@ class Container extends React.Component {
             {
               this.state.watchlists.length > 1 ?
                 <div className='watchlist'>
+                  <div className='close' onClick={this.handleClose} id='tickers2'>x</div>
                   <h1>{this.state.watchlists[1]}</h1>
                   <Watchlist name='watchlist-2' stocks={this.state.tickers2Data} />
                   <FindStock
@@ -131,6 +174,7 @@ class Container extends React.Component {
             {
               this.state.watchlists.length > 2 ?
                 <div className='watchlist'>
+                  <div className='close' onClick={this.handleClose} id='tickers3'>x</div>
                   <h1>{this.state.watchlists[2]}</h1>
                   <Watchlist name='watchlist-3' stocks={this.state.tickers3Data} />
                   <FindStock
@@ -145,6 +189,7 @@ class Container extends React.Component {
             {
               this.state.watchlists.length > 3 ?
                 <div className='watchlist'>
+                  <div className='close' onClick={this.handleClose} id='tickers4'>x</div>
                   <h1>{this.state.watchlists[3]}</h1>
                   <Watchlist name='watchlist-4' stocks={this.state.tickers4Data} />
                   <FindStock
@@ -159,6 +204,7 @@ class Container extends React.Component {
             {
               this.state.watchlists.length > 4 ?
                 <div className='watchlist'>
+                  <div className='close' onClick={this.handleClose} id='tickers5'>x</div>
                   <h1>{this.state.watchlists[4]}</h1>
                   <Watchlist name='watchlist-5' stocks={this.state.tickers5Data} />
                   <FindStock

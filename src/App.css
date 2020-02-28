@@ -17,7 +17,6 @@ h4 {
 
 .watchlist-grid {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .add-watchlist {
@@ -107,6 +106,21 @@ input {
   text-align: center;
 }
 
+.close {
+text-align: right;
+margin: 0 0 0 90%;
+padding: 5px;
+width: 10px;
+font-size: 25px;
+}
+
+.close:hover {
+  text-shadow: 2px 3px 4px black;
+  color: darkgray;
+  cursor: default;
+}
+
+
 .simple-quote {
   display: flex;
   flex-direction: column;
@@ -194,7 +208,7 @@ nav {
 .quote {
   height: 500px;
   border: 1px solid black;
-  padding: 30px;
+  padding: 30px 30px 30px 50px;
   box-shadow: 0 4px 6px 4px gray;
   margin-bottom: 10px;
   font-size: 20px;
@@ -235,6 +249,7 @@ margin: 0;
   box-shadow: 0 2px 3px 2px gray;
   border-radius: 100%;
   height: 200px;
+  width: 200px;
   object-fit: contain;
   padding: 5px;
   margin-top: 90px;
@@ -285,6 +300,12 @@ footer {
   text-decoration: none;
   color: black;
   padding: 20px;
+}
+
+@media screen and (max-width: 1500px) {
+  .watchlist-grid {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -338,9 +359,5 @@ footer {
 
 
 
-
-}
-
-@media screen and (max-width: 650px) {
 
 }
