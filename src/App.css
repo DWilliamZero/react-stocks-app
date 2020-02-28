@@ -10,6 +10,32 @@ body {
 .App {
   text-align: center;
 }
+nav {
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: black;
+  height: 250px;
+}
+
+.hero {
+  text-decoration: none;
+  color: rgba(255,255,255);
+  text-shadow: 2px 3px 3px blue;
+  font-size: 100px;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.sub-hero {
+  text-decoration: none;
+  color: rgba(255,255,255);
+  text-shadow: 2px 3px 3px blue;
+  font-size: 30px;
+  margin: 0 65px
+}
 
 h4 {
   margin: 0;
@@ -153,33 +179,6 @@ background-color: lightgreen;
   background-color: pink;
 }
 
-nav {
-  display: flex;
-  flex-direction: column;
-  background-image: url('https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-color: black;
-  height: 250px;
-}
-
-.hero {
-  text-decoration: none;
-  color: rgba(255,255,255);
-  text-shadow: 2px 3px 3px blue;
-  font-size: 100px;
-  margin-top: 30px;
-  margin-left: 60px;
-}
-
-.sub-hero {
-  text-decoration: none;
-  color: rgba(255,255,255);
-  text-shadow: 2px 3px 3px blue;
-  font-size: 30px;
-  margin: 0 65px
-}
-
 .back {
   text-decoration: none;
   color: black;
@@ -200,9 +199,6 @@ nav {
 .quote-chart {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* display: flex; */
-  /* flex-direction: row;
-  justify-content: space-around; */
 }
 
 .quote {
@@ -310,19 +306,27 @@ footer {
 
 @media screen and (max-width: 1000px) {
 
+.detailed {
+    border: 1px solid black;
+    padding: 30px;
+    box-shadow: 0 4px 6px 4px gray;
+    width: 90%;
+}
+
 .quote-chart {
   display: flex;
   flex-direction: column;
-}
-
-.chart {
-  height: 300px;
-  width: auto;
+  width: 90%;
 }
 
 .quote {
   height: 300px;
-  width: auto;
+  width: 90%;
+}
+
+.chart {
+  height: 400px;
+  width: 92.5%;
 }
 
 .quote h1{
@@ -354,10 +358,59 @@ footer {
 
 .map-card {
   margin: 10px auto;
+  width: 90%;
 }
 
+.img-map {
+  height: auto;
+  width: 100%;
 
+}
 
+}
 
+@media screen and (max-width: 740px) {
+  .watchlist-grid {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .add-watchlist {
+    display: block;
+    margin:0 auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+h1 {
+font-size: 25px;
+}
+
+h2 {
+  font-size: 2px;
+}
+
+h3 {
+  font-size: 15px;
+  margin: 9px;
+}
+
+  nav {
+    height: 150px;
+    width: 100%;
+  }
+  
+  .hero {
+    font-size: 50px;
+    margin: 30px auto 10px auto;
+  }
+  
+  .sub-hero {
+    font-size: 20px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 300px) {
 
 }
