@@ -1,9 +1,9 @@
 html {
   width: 100%;
+
 }
 
 body {
-  background: white;
   color: black;
 }
 
@@ -109,13 +109,26 @@ form {
 button {
   font-size: 20px;
   border: 2px solid black;
+  background-color: lightgray;
   margin: 2px 5px;
+}
+
+button:hover {
+  background-color: darkgray;
+  color: white;
 }
 
 input {
   font-size: 20px;
   border: 2px solid black;
   margin: 2px 5px;
+}
+a:hover {
+  color: red;
+}
+
+a.card:hover {
+background-color: lightgray;
 }
 
 .watchlist {
@@ -384,6 +397,18 @@ footer {
 @media screen and (max-width: 650px) {
 h1 {
 font-size: 25px;
+}
+
+.watchlist {
+  width: 260px;
+}
+
+.add-watchlist h1 {
+  font-size: 100px;
+}
+
+.add-watchlist-center h1 {
+  font-size: 100px;
 }
 
 h2 {

@@ -11,7 +11,7 @@ const FindStock = (props) => {
           type="text"
           placeholder='Enter Ticker Symbol'
         />
-        <button type="submit">Add Stock</button>
+        <button className='add-stock-btn' type="submit">Add Stock</button>
       </form>
     </>
   )
