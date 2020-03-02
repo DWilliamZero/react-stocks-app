@@ -5,10 +5,12 @@ html {
 
 body {
   color: black;
+  width: 100%;
 }
 
 .App {
   text-align: center;
+  width: 100%;
 }
 nav {
   display: flex;
@@ -158,7 +160,6 @@ font-size: 25px;
   color: darkgray;
   cursor: default;
 }
-
 
 .simple-quote {
   display: flex;
@@ -437,5 +438,32 @@ h3 {
 }
 
 @media screen and (max-width: 300px) {
+
+  h1 {
+    font-size: 15px;
+  }
+
+  .detailed {
+    width: 100%;
+  }
+
+  .quote {
+    width: 80%;
+    margin: 0;
+  }
+
+  .quote h1 {
+    font-size: 15px;
+
+  }
+
+  .hero-data h3 {
+    font-size: 10px;
+    margin: 0;
+  }
+
+  .chart {
+    padding: 80%;
+  }
 
 }
