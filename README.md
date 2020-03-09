@@ -1,24 +1,30 @@
 # Killer Quotes
 ### A responsive web app, built in React, that allows the user to search stock quotes, charts, and financial data.
 
-![](https://media.giphy.com/media/Wn74RUT0vjnoU98Hnt/giphy.gif)
+![](https://www.dwilliamzero.com/zero-cloud/bike-app-mockup.png)
 
 ## **Description:**
 Killer Quotes provides real-time (15-minute delay) stock quotes using the IEX API. Users can add stocks to their watchlist, see price data, chart data, and in-depth company information.  App is responsive for mobile and tablet screen sizes.  Charts will be render using the amCharts4 library.
 
 ## **Wireframes:**
-### **Home View**
-![](https://www.dwilliamzero.com/zero-cloud/my-stock-app_000.jpg)
-### **Home View w/ Watchlist added**
-![](https://www.dwilliamzero.com/zero-cloud/my-stock-app_001.jpg)
-### **Detailed Quote View**
-![](https://www.dwilliamzero.com/zero-cloud/my-stock-app_002.jpg)
+### **Home Page**
+![](https://www.dwilliamzero.com/zero-cloud/bike-app-wireframe_000.png)
+### **Not Logged-In**
+![](https://www.dwilliamzero.com/zero-cloud/bike-app-wireframe_001.png)
+### **Login Page**
+![](https://www.dwilliamzero.com/zero-cloud/bike-app-wireframe_002.png)
+### **Browse All Items Page**
+![](https://www.dwilliamzero.com/zero-cloud/bike-app-wireframe_003.png)
+### **My Items Page**
+![](https://www.dwilliamzero.com/zero-cloud/bike-app-wireframe_004.png)
+### **Edit Items Page**
+![](https://www.dwilliamzero.com/zero-cloud/bike-app-wireframe_005.png)
 
 ## **Component Tree:**
-![](https://www.dwilliamzero.com/zero-cloud/my-stock-app-component-tree.jpg)
+![](https://www.dwilliamzero.com/zero-cloud/bike-app-component-tree.png)
 
-## **API:** 
-The app will be using the [IEX API](https://iexcloud.io/)
+## **BACKEND:** 
+The app will use MongoDB w/ Mongoose & Express.
 
 ## **MVP Objectives:** 
 1. Users Can Create a Stock Watchlist
