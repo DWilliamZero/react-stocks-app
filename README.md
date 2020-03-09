@@ -1,10 +1,10 @@
-# Killer Quotes
-### A responsive web app, built in React, that allows the user to search stock quotes, charts, and financial data.
+# The Bike App
+### A responsive web app, with a React front-end and a MongoDB backend w/ Express. The front-end will be deployed on Surge.sh, and the back-end will be deployed with Atlas. 
 
 ![](https://www.dwilliamzero.com/zero-cloud/bike-app-mockup.png)
 
 ## **Description:**
-Killer Quotes provides real-time (15-minute delay) stock quotes using the IEX API. Users can add stocks to their watchlist, see price data, chart data, and in-depth company information.  App is responsive for mobile and tablet screen sizes.  Charts will be render using the amCharts4 library.
+The Bike App is a marketplace connecting buyers and sellers of used bikes.  Users can browse all available bikes without having to sign-in.  By creating an account, users are able post a bike forsale, or make an offer on a bike that is up for sale.
 
 ## **Wireframes:**
 ### **Home Page**
@@ -27,12 +27,13 @@ Killer Quotes provides real-time (15-minute delay) stock quotes using the IEX AP
 The app will use MongoDB w/ Mongoose & Express.
 
 ## **MVP Objectives:** 
-1. Users Can Create a Stock Watchlist
-2. Users Can Create Individual Watchlist Names
-3. Users Can Click On A Stock From A Watchlist and View A Detailed Quote
-4. Detailed Quotes Show A Graph
+1. Users can create and account.
+2. Users can browse or seach for bikes by make, model, or price.
+3. Users can make offers to buy a bike.
+4. Users can input a bike for sale, and receive offers from buyers.
 
 ## **Post-MVP:**
-1. Incorporate Google Maps into Detailed Quotes for Company Headquarters
-2. Detailed Quote Info Can Be Shared By Email
+1. Add internal communications between buyers and sellers.
+2. Add email notifications when there is an offer ona bike.
 3. Incorporate modals where appropriate.
+4. Stripe intergration for actual purchases.
