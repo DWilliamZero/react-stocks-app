@@ -8,17 +8,17 @@ The Bike App is a marketplace connecting buyers and sellers of used bikes.  User
 
 ## **Wireframes:**
 ### **Home Page**
-![](https://www.dwilliamzero.com/zero-cloud/bike-app-wireframe_001.png)
-### **Not Logged-In**
 ![](https://www.dwilliamzero.com/zero-cloud/bike-app-wireframe_005.png)
+### **Home Page: Logged-In**
+![](https://www.dwilliamzero.com/zero-cloud/bike-app-wireframe_001.png)
 ### **Login Page**
-![](https://www.dwilliamzero.com/zero-cloud/bike-app-wireframe_002.png)
+![](https://www.dwilliamzero.com/zero-cloud/bike-app-wireframe_000.png)
 ### **Browse All Items Page**
 ![](https://www.dwilliamzero.com/zero-cloud/bike-app-wireframe_003.png)
 ### **My Items Page**
 ![](https://www.dwilliamzero.com/zero-cloud/bike-app-wireframe_004.png)
 ### **Edit Items Page**
-![](https://www.dwilliamzero.com/zero-cloud/bike-app-wireframe_000.png)
+![](https://www.dwilliamzero.com/zero-cloud/bike-app-wireframe_002.png)
 
 ## **Component Tree:**
 ![](https://www.dwilliamzero.com/zero-cloud/bike-app-component-tree.png)
